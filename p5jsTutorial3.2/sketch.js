@@ -13,7 +13,7 @@ function preload()
 function setup()
 {
   canvasID = 0;
-  createCanvas(700,500);
+  createCanvas(1000,800);
   fill(125,125,0);
   setupIntro();
   setupMainMenu();
