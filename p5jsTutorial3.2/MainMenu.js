@@ -27,12 +27,12 @@ function setupMainMenu()
     buttonMediumX = 100;
     buttonMediumY = 200;
     buttonMedium2X = 300;
-    buttonMedium2Y = 350;
+    buttonMedium2Y = 300;
 
     buttonHardX = 100;
     buttonHardY = 300;
     buttonHard2X = 300;
-    buttonHard2Y = 450;
+    buttonHard2Y = 500;
 
 }
 
@@ -54,13 +54,13 @@ function drawMainMenu()
       {
         canvasID = 2
       }
-
+  }
   if (mouseX > buttonMediumX && mouseX < buttonMedium2X && mouseY > buttonMediumY && mouseY < buttonMedium2Y)
      {
     image(mediumButtonHover,buttonMediumX,buttonMediumY);
     if (mouseIsPressed)
       {
-            canvasID = 3
+        canvasID = 3
       }
      }
 
@@ -68,9 +68,8 @@ function drawMainMenu()
      {
     image(hardButtonHover,buttonHardX,buttonHardY);
     if (mouseIsPressed)
-        {
-                canvasID = 4
-        }
+      {
+        canvasID = 4
+      }
      }
-  }
 }
